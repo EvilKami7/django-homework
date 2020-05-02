@@ -19,6 +19,16 @@ class IndexView(TemplateView):
                         'english': 5,
                         'sport': 2.3,
                         'average': 2.3,
+                    },
+                    {
+                        'id': 2,
+                        'fio': 'Someone',
+                        'timp': 2,
+                        'eis': 3,
+                        'philosophy': 4,
+                        'english': 5,
+                        'sport': 2.3,
+                        'average': 2.3,
                     }
                 ],
                 'excellent_students': 'Student A, Student B',
@@ -31,9 +41,10 @@ class IndexView(TemplateView):
 class Student:
     pass
 
-
 class Statistics:
     # student_id, [Scores]
+    def get_excellent_students(self):
+        return [Student()]
     pass
 
 class Subject:
